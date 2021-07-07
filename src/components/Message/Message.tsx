@@ -5,7 +5,9 @@ interface Iprops {
   tag?: keyof JSX.IntrinsicElements;
 }
 
-const Message: React.FC<Iprops> = ({ message = 'Default message', tag = 'span' }): React.ReactElement => (
-  <span>{message}</span>
-);
+const Message: React.FC<Iprops> = ({
+  message = 'Default message',
+  tag = 'span',
+}): React.ReactElement => <span>{message}</span>;
+
 export default Message;
