@@ -4,6 +4,11 @@ modern tsx template, fully setup
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Don't forget run:
+```javascript
+npm i
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
