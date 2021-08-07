@@ -1,13 +1,29 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
+import './Message.css';
 
-interface Iprops {
-  message?: string;
-  tag?: keyof JSX.IntrinsicElements;
+interface Children {
+  head: ReactNode;
+  body: ReactNode;
 }
 
-const Message: React.FC<Iprops> = ({
+interface Props {
+  message?: string;
+  children?: Children;
+}
+
+const Message: React.FC<Props> = ({
   message = 'Default message',
-  tag = 'span',
-}): React.ReactElement => <span>{message}</span>;
+  children = {} as Children,
+}): React.ReactElement => {
+  const { head, body } = children;
+
+  return (
+    <section className="Message">
+      <div>{head}</div>
+      <div>{body}</div>
+      <div>{message}</div>
+    </section>
+  );
+};
 
 export default Message;

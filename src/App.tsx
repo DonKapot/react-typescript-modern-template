@@ -3,11 +3,17 @@ import './App.css';
 import Message from './components/Message/Message';
 
 const App = (): React.ReactElement => (
-  <div className="App">
-    HELLO
-    <Message message="Some message" />
+  <main className="App">
+    <p>Hello App</p>
     <Message />
-  </div>
+    <Message message="Some message" />
+    <Message message="Message with children">
+      {{
+        head: <h2>Message Head</h2>,
+        body: <div>Message Body</div>,
+      }}
+    </Message>
+  </main>
 );
 
 export default App;
