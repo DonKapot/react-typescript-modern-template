@@ -1,5 +1,5 @@
 # react-typescript-modern-template
-modern tsx template, fully setup
+Modern tsx template, fully setuped (For bigger projects use https://nx.dev/latest/react/getting-started/intro for better expirience).
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
